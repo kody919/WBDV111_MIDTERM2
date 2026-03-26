@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="vibeprocss.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="brand">
+                <div class="logo-icon">👨🏻‍🚒</div>
+                <h1>Zitow<span>Music</span></h1>
+                <p>Sign up!</p>
+            </div>
+
+            <form onsubmit="showMessage(event)">
+                <div class="input-group">
+                    <input type="username" id="username" required placeholder="Enter your username">
+					
+					<input type="email" id="email" required placeholder="Enter your email address">
+					
+					<input type="password" id="password" required placeholder="Enter your password">
+					
+					<input type="password" id="confirmpassword" required placeholder="Confirm your password">
+                </div>
+                
+                <button type="submit" class="login-btn">Reset Account</button>
+				</form>
+				
+				<p id="message" style="color: 27CFF5;"></p>
+				
+				<script>
+					function showMessage(event) {
+					event.preventDefault();
+					document.getElementById("message").innerText =
+					"a reset link has been sent to your gmail.";
+					}
+				</script>
+                
+                <div class="footer-links">
+                    <div class="divider"></div>
+                    <span><a href="vibepro1.html" class="signup">Back to login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html> 
